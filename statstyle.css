@@ -1,0 +1,74 @@
+body{
+background: #161616;
+}
+h1{
+  font-family: cursive;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+h2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: black;
+}
+.hovit{
+  background: #2CC3F5;
+}
+.vkimage{
+  margin: 0px 250px;
+  padding: 10px;
+}
+.caption-text{
+  font-family: serif;
+  font-weight: 900;
+  padding: 10px;
+}
+.timeline{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.align{
+  margin: 0px 0px;
+}
+.row{
+  border-radius: 10px;
+
+}
+.awards{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hovit{
+  border-radius: 10px;
+  transition: box-shadow .3s;
+  border: 1px solid #2CC3F5;
+  margin: 6px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hovit::after{
+  content: "";
+ border-radius: 10px;
+ position: absolute;
+ z-index: -1;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+ opacity: 0;
+ -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+ transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.hovit:hover{
+  -webkit-transform: scale(1.00, 1.00);
+  transform: scale(1.05, 1.05);
+}
+.hovit:hover::after {
+    opacity: 1;
+}
